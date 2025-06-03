@@ -32,15 +32,15 @@ def gerar_chaves(nome=""):
 
     d = pow(e, -1, totiente)
 
-    print(f"🟡 p:   {p}")
-    print(f"🟡 q:   {q}")
-    print(f"🔢 n:   {n}")
-    print(f"🧮 φ:   {totiente}")
-    print(f"🔐 e:   {e}")
-    print(f"🔓 d:   {d}")
+    print(f" p:   {p}")
+    print(f" q:   {q}")
+    print(f" n:   {n}")
+    print(f" φ:   {totiente}")
+    print(f" e:   {e}")
+    print(f" d:   {d}")
     print("================================")
-    print(f"🔐 Chave pública do {nome.lower()}: ({e}, {n})")
-    print(f"🔐 Chave privada do {nome.lower()}: ({d}, {n})\n")
+    print(f" Chave pública do {nome.lower()}: ({e}, {n})")
+    print(f" Chave privada do {nome.lower()}: ({d}, {n})\n")
     return ((e, n), (d, n))
 
 def criptografar(mensagem, chave_publica):
